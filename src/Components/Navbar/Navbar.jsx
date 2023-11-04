@@ -36,7 +36,9 @@ const Navbar = () => {
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
+      <Link to="login">
       <button className="btn btn-ghost" >Login</button>
+      </Link>
     </ul>
   </div>
 </div>
