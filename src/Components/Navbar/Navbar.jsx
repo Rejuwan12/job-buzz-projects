@@ -1,8 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../../images/logo.png'
+import useAuth from "../../Hooks/useAuth";
 
 
 const Navbar = () => {
+  const {user, logOut} = useAuth();
     const NavLinks = <>
        <li> <NavLink to="/"><a>Home</a></NavLink></li>
        <li> <NavLink to="/allJobs"><a>All Jobs</a></NavLink></li>
@@ -36,9 +38,22 @@ const Navbar = () => {
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <Link to="login">
-      <button className="btn btn-ghost" >Login</button>
-      </Link>
+    {user ? (
+          <>
+            
+            <div className="flex items-center gap-3">
+            <img className="rounded-full w-[40px]" src={user.photoURL} alt="" />
+            <span className="mr-2">{user.displayName}</span>
+            </div>
+            <button onClick={logOut} className="btn btn-ghost">
+              LogOut
+            </button>
+          </>
+        ) : (
+          <Link to="login">
+            <button className="btn btn-ghost">Login</button>
+          </Link>
+        )}
     </ul>
   </div>
 </div>

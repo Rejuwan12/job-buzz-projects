@@ -9,6 +9,7 @@ import Blogs from './../Pages/Blogs/Blogs';
 import MyJob from './../Pages/MyJob/MyJob';
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -27,7 +28,9 @@ const router = createBrowserRouter([
                 },
                 {
                     path:'/addJob',
-                    element: <AddJob/>
+                    element: <PrivateRoute>
+                         <AddJob/>
+                    </PrivateRoute>
                 },
                 {
                     path:'/',
@@ -35,7 +38,9 @@ const router = createBrowserRouter([
                 },
                 {
                     path:'/appliedJob',
-                    element: <AppliedJob/>
+                    element: <PrivateRoute>
+                        <AppliedJob/>
+                    </PrivateRoute>
                 },
                 {
                     path:'/blogs',
@@ -43,7 +48,10 @@ const router = createBrowserRouter([
                 },
                 {
                     path:'/myJob',
-                    element: <MyJob/>
+                    element:
+                    <PrivateRoute>
+                        <MyJob/>
+                    </PrivateRoute> 
                 },
                 {
                     path:'/login',
