@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const CetegoryCard = ({ data }) => {
-    const {posted_the_job,Job_Title,Posting_Date,Application_Deadline,Salary_range,Applicants_Number,img_url}= data;
+    const {_id,posted_the_job,Job_Title,Posting_Date,Application_Deadline,Salary_range,Applicants_Number,img_url}= data;
     
     return (
         <div className="card card-compact w-96  bg-base-100 border">
@@ -14,7 +15,7 @@ const CetegoryCard = ({ data }) => {
     <p>Salary Range: {Salary_range}</p>
     <p>Application Number: {Applicants_Number}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">View Details</button>
+      <Link to={`/cetegorys/${_id}`}><button className="btn btn-primary">View Details</button></Link>
     </div>
   </div>
 </div>

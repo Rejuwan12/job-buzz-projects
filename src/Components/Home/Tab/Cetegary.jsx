@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList,  } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import CetegoryCard from './CetegoryCard';
+import axios from 'axios';
 
 
 const Cetegary = () => {
@@ -11,16 +12,16 @@ const Cetegary = () => {
 
 
   useEffect(()=>{
-    fetch('data.json')
-    .then(res => res.json())
-    .then(data => setTotalData(data))
+    axios.get('http://localhost:5000/api/v1/cetegorys')
+    .then(res => setTotalData(res.data))
   },[])
+
 
   const handleClick= (val) => {
       setTabData(val);
 
   } 
-  console.log(totalData, tabData);
+  // console.log(totalData, tabData);
   const filterData = totalData?.filter(data => data.Job_Title == tabData);
   console.log(filterData);
 
@@ -39,9 +40,9 @@ const Cetegary = () => {
       <Tab onClick={()=> handleClick('All job')}>All Job</Tab>
     </TabList>
 
-    <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4 mb-4'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4 mb-4 text-center'>
         {
-           filterData?.length > 0 ?  filterData?.map(data => <CetegoryCard key={data.id} data={data}/> ) :  totalData?.map(data => <CetegoryCard key={data.id} data={data}/> )
+           filterData?.length > 0 ?  filterData?.map(data => <CetegoryCard key={data._id} data={data}/> ) :  totalData?.map(data => <CetegoryCard key={data._id} data={data}/> )
         }
     </div>
   </Tabs>

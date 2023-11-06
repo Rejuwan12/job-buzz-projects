@@ -10,6 +10,7 @@ import MyJob from './../Pages/MyJob/MyJob';
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import JobDetails from "../Pages/JobDetails/JobDetails";
 
 const router = createBrowserRouter([
     {
@@ -60,6 +61,11 @@ const router = createBrowserRouter([
                 {
                     path:'/register',
                     element: <Register/>
+                },
+                {
+                    path:'/cetegorys/:id',
+                    element: <JobDetails/>,
+                    loader: ({params}) => fetch(`http://localhost:5000/api/v1/cetegorys/${params.id}`)
                 }
 
             ]
