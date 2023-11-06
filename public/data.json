@@ -1,0 +1,94 @@
+ [
+    {
+        "id": 1,
+        "posted_the_job": "ABC Company",
+        "img_url": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/151889077/original/2c188eb92da0a42c4f2b3f43eedb9fb2c67ae47b/apply-remote-jobs-for-you.jpg" ,
+        "Job_Title": "Remote Job",
+        "Posting_Date": "2023-11-05",
+        "Application_Deadline": "2023-11-30",
+        "Salary_range": "$80,000 - $100,000 per year",
+        "Applicants_Number": 0,
+        "Details_Button": "https://example.com/job-details/software-engineer"
+   },
+  {    
+        "id": 2,
+        "posted_the_job": "ABCD Company",
+        "Job_Title": "On Site Job",
+        "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXn4uoX67ZXRrPz1_l06DQpBpR30s-JNjelA&usqp=CAU",
+        "Posting_Date": "2023-11-05",
+        "Application_Deadline": "2023-11-30",
+        "Salary_range": "$80,000 - $100,000 per year",
+        "Applicants_Number": 0,
+        "Details_Button": "https://example.com/job-details/software-engineer"
+  },
+   {     
+       "id": 3,
+        "posted_the_job": "ABCDE Company",
+        "img_url": "https://www.saleme.lk/saleme/images/uploads/34561/saleme_5c238ea6cf98e.jpg",
+        "Job_Title": "Part Time",
+        "Posting_Date": "2023-11-05",
+        "Application_Deadline": "2023-11-30",
+        "Salary_range": "$80,000 - $100,000 per year",
+        "Applicants_Number": 0,
+        "Details_Button": "https://example.com/job-details/software-engineer"
+  },
+   {   
+       "id": 4,
+        "posted_the_job": "ABCFG Company",
+        "Job_Title": "Hybrid",
+        "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGG1Bu_YZcQYDq_oKzT47m5nnh7Bjpln9jzQ&usqp=CAU",
+        "Posting_Date": "2023-11-05",
+        "Application_Deadline": "2023-11-30",
+        "Salary_range": "$80,000 - $100,000 per year",
+        "Applicants_Number": 0,
+        "Details_Button": "https://example.com/job-details/software-engineer"
+   },
+    {
+        "id": 5,
+        "posted_the_job": "ABCIJK Company",
+        "img_url": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/151889077/original/2c188eb92da0a42c4f2b3f43eedb9fb2c67ae47b/apply-remote-jobs-for-you.jpg" ,
+        "Job_Title": "Remote Job",
+        "Posting_Date": "2023-11-05",
+        "Application_Deadline": "2023-11-30",
+        "Salary_range": "$80,000 - $100,000 per year",
+        "Applicants_Number": 0,
+        "Details_Button": "https://example.com/job-details/software-engineer"
+   },
+  {    
+        "id": 6,
+        "posted_the_job": "ABCEHJ Company",
+        "Job_Title": "On Site Job",
+        "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXn4uoX67ZXRrPz1_l06DQpBpR30s-JNjelA&usqp=CAU",
+        "Posting_Date": "2023-11-05",
+        "Application_Deadline": "2023-11-30",
+        "Salary_range": "$80,000 - $100,000 per year",
+        "Applicants_Number": 0,
+        "Details_Button": "https://example.com/job-details/software-engineer"
+  },
+   {     
+       "id": 7,
+        "posted_the_job": "AB Company",
+        "img_url": "https://www.saleme.lk/saleme/images/uploads/34561/saleme_5c238ea6cf98e.jpg",
+        "Job_Title": "Part Time",
+        "Posting_Date": "2023-11-05",
+        "Application_Deadline": "2023-11-30",
+        "Salary_range": "$80,000 - $100,000 per year",
+        "Applicants_Number": 0,
+        "Details_Button": "https://example.com/job-details/software-engineer"
+  },
+   {   
+       "id": 8,
+        "posted_the_job": "ABCDF Company",
+        "Job_Title": "Hybrid",
+        "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGG1Bu_YZcQYDq_oKzT47m5nnh7Bjpln9jzQ&usqp=CAU",
+        "Posting_Date": "2023-11-05",
+        "Application_Deadline": "2023-11-30",
+        "Salary_range": "$80,000 - $100,000 per year",
+        "Applicants_Number": 0,
+        "Details_Button": "https://example.com/job-details/software-engineer"
+   }
+]
+      
+
+
+

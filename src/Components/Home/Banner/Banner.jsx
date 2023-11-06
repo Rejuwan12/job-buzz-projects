@@ -18,8 +18,13 @@ const Banner = () => {
             </div>
             </form>
             </div>
+           
+        </div>
+        <div className='text-center text-2xl font-bold mt-4'>
+            <h1>Jobs By Cetegory</h1>
         </div>
        </div>
+        
     );
 };
 
