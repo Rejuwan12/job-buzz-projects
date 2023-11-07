@@ -12,7 +12,7 @@ const CetegoryCard = ({ data }) => {
     <p> Post By: {posted_the_job}</p>
     <p>Date: {Posting_Date}</p>
     <p>Deadline: {Application_Deadline}</p>
-    <p>Salary Range: {Salary_range}</p>
+    <p>Salary Range: {Salary_range}Per Year</p>
     <p>Application Number: {Applicants_Number}</p>
     <div className="card-actions justify-end">
       <Link to={`/cetegorys/${_id}`}><button className="btn btn-primary">View Details</button></Link>

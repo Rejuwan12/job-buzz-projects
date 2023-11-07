@@ -20,7 +20,7 @@ const Banner = () => {
             </div>
            
         </div>
-        <div className='text-center text-2xl font-bold mt-4'>
+        <div className='text-center text-4xl font-bold mt-4'>
             <h1>Jobs By Cetegory</h1>
         </div>
        </div>

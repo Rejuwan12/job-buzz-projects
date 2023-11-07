@@ -40,12 +40,15 @@ const Cetegary = () => {
       <Tab onClick={()=> handleClick('All job')}>All Job</Tab>
     </TabList>
 
-    <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4 mb-4 text-center'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 ml-[78px] mt-4 mb-4 text-center'>
         {
            filterData?.length > 0 ?  filterData?.map(data => <CetegoryCard key={data._id} data={data}/> ) :  totalData?.map(data => <CetegoryCard key={data._id} data={data}/> )
         }
     </div>
   </Tabs>
+  <div>
+    <h1 className='text-4xl font-bold mt-4 mb-4'>Jobs Board</h1>
+  </div>
  </div>
 );
     
