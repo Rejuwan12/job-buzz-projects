@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link, useLoaderData } from "react-router-dom";
 
 
@@ -6,7 +7,13 @@ const JobDetails = () => {
     const {posted_the_job,Job_Title,Salary_range,Applicants_Number,img_url,Details_Button}= data;
     console.log(data);
     return (
-        <div className="card card-compact   bg-base-100 border">
+     <div>
+      <Helmet>
+        <title>
+          JobBuzz|Job Details
+        </title>
+      </Helmet>
+         <div className="card card-compact   bg-base-100 border">
   <div className="card-body">
   <figure><img src={img_url} className="w-full h-[420px] object-cover" alt="Shoes" /></figure>
     <h2 className="card-title">Job Title: {Job_Title}</h2>
@@ -19,6 +26,7 @@ const JobDetails = () => {
     </div>
   </div>
 </div>
+     </div>
     );
 };
 

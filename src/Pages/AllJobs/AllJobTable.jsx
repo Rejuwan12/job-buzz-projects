@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 
 const AllJobTable = ({data}) => {
     const {_id,posted_the_job,Job_Title,Posting_Date,Application_Deadline,Salary_range}= data;
     return (
        <div>
+        <Helmet>
+          <title>JobBuzz | All Job Title</title>
+        </Helmet>
          <div className="overflow-x-auto">
         <table className="table ">
           {/* head */}

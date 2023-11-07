@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
@@ -21,7 +22,13 @@ const Register = () => {
     
   }
     return (
-        <div className="flex justify-center mt-24">
+       <div>
+        <Helmet>
+          <title>
+            JobBuzz | Register
+          </title>
+        </Helmet>
+         <div className="flex justify-center mt-24">
         <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
           <h4 className="block font-sans text-4xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased text-center">
             Register Now
@@ -128,6 +135,7 @@ const Register = () => {
           </form>
         </div>
       </div>
+       </div>
     );
 };
 

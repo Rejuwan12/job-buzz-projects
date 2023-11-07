@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import AllJobTable from "./AllJobTable";
 import { AiOutlineSearch } from "react-icons/ai";
+import { Helmet } from "react-helmet-async";
 
 const AllJobs = () => {
   const [totalData, setTotalData] = useState([]);
@@ -27,6 +28,9 @@ const AllJobs = () => {
 
   return (
     <div>
+        <Helmet>
+            <title> JobBuzz | All Jobs</title>
+        </Helmet>
       <div className="p-8 bg-gray-500 text-center mb-5 mt-4">
         <form onSubmit={handleSearchJobs}>
           <input

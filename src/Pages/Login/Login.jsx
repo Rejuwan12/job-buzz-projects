@@ -3,6 +3,7 @@ import google from '../../../images/google.png';
 import useAuth from "../../Hooks/useAuth";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const [email , setEmail] = useState('');
@@ -33,7 +34,13 @@ const Login = () => {
     }
   }
     return (
-        <div className="flex justify-center mt-36">
+       <div>
+        <Helmet>
+          <title>
+            JobBuzz | Login
+          </title>
+        </Helmet>
+         <div className="flex justify-center mt-36">
       <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
         <h4 className=" font-sans text-4xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased text-center">
           Login Now
@@ -118,6 +125,7 @@ const Login = () => {
         </form>
       </div>
     </div>
+       </div>
     );
 };
 

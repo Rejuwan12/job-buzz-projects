@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Helmet } from "react-helmet-async";
 import toast from "react-hot-toast";
 
 
@@ -55,7 +56,11 @@ const AddJob = () => {
   const [endDate, setEndDate] = useState(new Date());
 
   return (
-    <div className="bg-[#F4F3F0] p-24">
+   <div>
+    <Helmet>
+                <title>Job Buzz | Add Job</title>
+            </Helmet>
+     <div className="bg-[#F4F3F0] p-24">
       <div>
         <h1 className="text-3xl font-bold text-center">Add a Job</h1>
         <p className="text-center mb-10">Enter your details to Add a Job</p>
@@ -207,6 +212,7 @@ const AddJob = () => {
         />
       </form>
     </div>
+   </div>
   );
 };
 

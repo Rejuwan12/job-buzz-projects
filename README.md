@@ -1,8 +1,12 @@
-# React + Vite
+# # 5 Features On My Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*  You cannot login to this website without registration. It is one of the specialties 
+ 
+*  Clicking on some routes in the navbar will not allow you to access them unless you are logged in to the website 
 
-Currently, two official plugins are available:
+ *  You have to login to see the details of my website services
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ * When a user logs in, his email name and picture will be shown in the navbar 
+ 
+
+
