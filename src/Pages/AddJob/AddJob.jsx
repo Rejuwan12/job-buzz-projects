@@ -3,9 +3,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Helmet } from "react-helmet-async";
 import toast from "react-hot-toast";
+import useAuth from "../../Hooks/useAuth";
 
 
 const AddJob = () => {
+  const {user} = useAuth();
   const handleAddJob = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -30,6 +32,7 @@ const AddJob = () => {
       Applicants_Number,
       Details_Button,
       img_url,
+      email: user.email
     };
 
     const toastId = toast.loading("added");
@@ -124,7 +127,7 @@ const AddJob = () => {
             <label className="input-group">
               <input
                 name="salary"
-                type="number"
+                type="text"
                 placeholder="Salary Range"
                 className="input input-bordered w-full"
               />

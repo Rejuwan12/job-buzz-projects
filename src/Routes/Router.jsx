@@ -11,6 +11,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import JobDetails from "../Pages/JobDetails/JobDetails";
+import Update from "../Pages/UpdateJob/Update";
 
 const router = createBrowserRouter([
     {
@@ -37,12 +38,7 @@ const router = createBrowserRouter([
                     path:'/',
                     element: <Home/>
                 },
-                {
-                    path:'/appliedJob',
-                    element: <PrivateRoute>
-                        <AppliedJob/>
-                    </PrivateRoute>
-                },
+                
                 {
                     path:'/blogs',
                     element: <Blogs/>
@@ -65,6 +61,16 @@ const router = createBrowserRouter([
                 {
                     path:'/cetegorys/:id',
                     element: <JobDetails/>,
+                    loader: ({params}) => fetch(`http://localhost:5000/api/v1/cetegorys/${params.id}`)
+                },
+                {
+                    path:'/appliedJob',
+                    element: <AppliedJob/>,
+                    loader: () => fetch('http://localhost:5000/api/v1/user/applied')
+                },
+                {
+                    path:'/update/:id',
+                    element: <Update/>,
                     loader: ({params}) => fetch(`http://localhost:5000/api/v1/cetegorys/${params.id}`)
                 }
 

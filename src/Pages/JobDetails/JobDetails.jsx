@@ -12,7 +12,8 @@ const JobDetails = () => {
   }
     const data = useLoaderData();
     const {posted_the_job,Job_Title,Salary_range,Applicants_Number,img_url,Details_Button}= data;
-    console.log(data);
+    console.log(Object.keys(data).toString());
+    
     return (
      <div>
       <Helmet>
@@ -32,7 +33,7 @@ const JobDetails = () => {
       <Link><button onClick={handleApply} className="btn btn-primary">Apply Now</button></Link>
     </div>
   </div> 
-   <DetailsModal showModal={showModal} setShowModal={setShowModal}>
+   <DetailsModal data={data} showModal={showModal} setShowModal={setShowModal}>
 
    </DetailsModal>
 </div>
