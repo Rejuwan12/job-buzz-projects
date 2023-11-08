@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 
+import { reload } from "firebase/auth";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const MyJobCard = ({ job }) => {
   const {
@@ -16,6 +18,29 @@ const MyJobCard = ({ job }) => {
     img_url,
     
   } = job;
+
+
+  const handleDelete = (_id) => {
+    fetch(`http://localhost:5000/api/v1/cetegorys/${_id}`, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.deletedCount > 0) {
+          Swal.fire({
+            title: "Delete",
+            text: "Deleted successfully",
+            icon: "question",
+            confirmButtonText: "Done",
+          })
+          .then(()=> {
+            location.reload()
+           })
+          
+        }
+      });
+  };
   return (
     <div>
       <div>
@@ -63,7 +88,7 @@ const MyJobCard = ({ job }) => {
             </a>
             
             <div className="card-actions justify-end">
-              <button className="btn bg-red-600 text-white font-bold">
+              <button onClick={() => {handleDelete(_id)}} className="btn bg-red-600 text-white font-bold">
                 Delete
               </button>
               <Link to={`/update/${_id}`}><button className="btn bg-green-500 text-white">Update</button></Link>
