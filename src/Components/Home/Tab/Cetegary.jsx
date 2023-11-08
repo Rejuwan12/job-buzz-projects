@@ -32,7 +32,7 @@ const Cetegary = () => {
      
  <div className='text-center mt-2 '>
      <Tabs>
-    <TabList className="font-medium bg-slate-300">
+    <TabList className="font-medium bg-[#a256b052]">
       <Tab onClick={()=> handleClick('On Site Job')} >On Site Job</Tab>
       <Tab onClick={()=> handleClick('Remote Job')}>Remote Job</Tab>
       <Tab onClick={()=> handleClick('Hybrid')}>Hybrid </Tab>

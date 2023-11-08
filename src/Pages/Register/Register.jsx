@@ -28,7 +28,7 @@ const Register = () => {
             JobBuzz | Register
           </title>
         </Helmet>
-         <div className="flex justify-center mt-24">
+         <div className="flex justify-center mt-16 mb-16">
         <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
           <h4 className="block font-sans text-4xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased text-center">
             Register Now

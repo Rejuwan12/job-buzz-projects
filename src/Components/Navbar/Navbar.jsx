@@ -14,7 +14,7 @@ const Navbar = () => {
        <li> <NavLink to="/myJob"><a>My Job</a></NavLink></li>
     </>
     return (
-        <div className="navbar bg-green-100">
+        <div className="navbar bg-[#a256b052]">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -31,7 +31,7 @@ const AllJobs = () => {
         <Helmet>
             <title> JobBuzz | All Jobs</title>
         </Helmet>
-      <div className="p-8 bg-gray-500 text-center mb-5 mt-4">
+      <div className="p-8 bg-[#c5b1bbcc] text-center mb-5 mt-4">
         <form onSubmit={handleSearchJobs}>
           <input
             type="text"

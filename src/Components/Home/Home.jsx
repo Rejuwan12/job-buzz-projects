@@ -6,6 +6,7 @@ import Section2 from "./Sections/Section2";
 
 
 
+
 const Home = () => {
     return (
         <div>
@@ -16,6 +17,7 @@ const Home = () => {
            <Cetegary/>
            <Section1/>
            <Section2/>
+           
         </div>
     );
 };
