@@ -8,5 +8,5 @@
 
  * When a user logs in, his email name and picture will be shown in the navbar 
  
-
+* I have used Framer Motion on my website. That makes my website look better
 

@@ -23,7 +23,7 @@ const JobDetails = () => {
       </Helmet>
          <div className="card card-compact   bg-base-100 border">
   <div className="card-body">
-  <figure><img src={img_url} className="w-full h-[420px] object-cover" alt="Shoes" /></figure>
+  <figure><img src={img_url} className="w-full h-[520px] sm:object-cover p-8 " alt="Shoes" /></figure>
     <h2 className="card-title">Job Title: {Job_Title}</h2>
     <p>Post By: {posted_the_job}</p>
     <p>Salary Range: {Salary_range} Per Year</p>
