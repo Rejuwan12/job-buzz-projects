@@ -40,7 +40,7 @@ console.log(totalData);
       <Tab onClick={()=> handleClick('All job')}>All Job</Tab>
     </TabList>
 
-    <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 ml-[78px] mt-4 mb-4 text-center'>
+    <div className='grid grid-cols-1  lg:grid-cols-2 gap-4 ml-2 lg:ml-[170px] mt-4 mb-4 text-center'>
         {
            filterData?.length > 0 ?  filterData?.map(data => <CetegoryCard key={data._id} data={data}/> ) :  totalData?.map(data => <CetegoryCard key={data._id} data={data}/> )
         }

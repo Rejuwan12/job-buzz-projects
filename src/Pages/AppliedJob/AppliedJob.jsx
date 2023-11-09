@@ -14,13 +14,13 @@ const AppliedJob = () => {
         <Helmet>
           <title>JobBuzz | Applied Job</title>
         </Helmet>
-        <div>
-            <button onClick={() => toPDF()} className="btn ">Download PDF</button>
+        <div className="flex justify-end p-4 ">
+            <button onClick={() => toPDF()} className="btn btn-outline  text-red-600">Download PDF</button>
         </div>
             
       <div ref={targetRef}>
     
-       <div>
+       <div className="mt-4 mb-4">
        {
             data.map(job => <AppliedJobCard key={job._id
             } job={job}/>)

@@ -19,7 +19,7 @@ const BlogOne = () => {
             automatically authenticated, regardless of whether they are genuine
             or malicious. Let’s check out an example:
           </p>
-          <img className="ml-[50px] p-4" src={blogs1} alt="" />
+          <img className="lg:ml-[50px] p-4" src={blogs1} alt="" />
           <p>
             In this case, the client application can access the user’s resource
             using an access token. The authorization server issues an access

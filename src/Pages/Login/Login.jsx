@@ -15,16 +15,17 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    // if (password.length < 6) {
-    //   Swal.fire("Oppss!", "Password Should be 6 character!", "question");
-    //   return;
-    // } else if (!/[A-Z]/.test(password)) {
-    //   Swal.fire("Password do not have a capital letter");
-    //   return;
-    // } else if (!/[!@#$%^&*]/.test(password)) {
-    //   Swal.fire("Password do not have a special character");
-    //   return;
-    // }
+    
+    if (password.length < 6) {
+      Swal.fire("Oppss!", "Password Should be 6 character!", "question");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      Swal.fire("Password do not have a capital letter");
+      return;
+    } else if (!/[!@#$%^&*]/.test(password)) {
+      Swal.fire("Password do not have a special character");
+      return;
+    }
 
   const toastId = toast.loading('logged in')
     try{

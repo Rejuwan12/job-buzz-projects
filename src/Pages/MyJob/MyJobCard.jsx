@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import { reload } from "firebase/auth";
+
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -43,10 +43,10 @@ const MyJobCard = ({ job }) => {
         <Helmet>
           <title>JobBuzz | All Job Title</title>
         </Helmet>
-        <div className="card card-side bg-base-100 shadow-xl">
+        <div className="card card-side bg-base-100 mt-2 ">
           <figure>
             <img
-              className="w-[350px] h-[300px] border-r-2 rounded-xl"
+              className="w-[350px] h-[300px] object-cover border-r-2 "
               src={img_url}
               alt="Movie"
             />
@@ -79,7 +79,7 @@ const MyJobCard = ({ job }) => {
                 <span className="font-bold">{Application_Deadline}</span>
               </p>
             </div>
-            <a href={cv_Link} className="link font-bold">
+            <a href={cv_Link} className="link font-bold text-pink-500">
               Your Resume Link
             </a>
 
@@ -88,12 +88,12 @@ const MyJobCard = ({ job }) => {
                 onClick={() => {
                   handleDelete(_id);
                 }}
-                className="btn bg-red-600 text-white font-bold"
+                className="btn btn-warning border-none bg-red-600 text-white font-bold"
               >
                 Delete
               </button>
               <Link to={`/update/${_id}`}>
-                <button className="btn bg-green-500 text-white">Update</button>
+                <button className="btn btn-success bg-green-500 text-white">Update</button>
               </Link>
             </div>
           </div>

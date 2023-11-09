@@ -4,7 +4,7 @@ const Banner = () => {
     return (
        <div className='space-x-14'>
          <div className='relative'>
-            <img src={banner} className='w-full h-[525px]' alt="" />
+            <img src={banner} className='w-full h-[250px] lg:h-[625px]' alt="" />
         </div>
         <div className='absolute top-[220px] text-white'>
             <h1 className='text-4xl text-green-200  font-bold flex ml-[200px] '>Find Your Job

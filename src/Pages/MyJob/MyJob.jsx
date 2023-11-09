@@ -21,7 +21,7 @@ const MyJob = () => {
             <Helmet>
                 <title>JobBuzz | My Job</title>
             </Helmet>
-            <div>
+            <div className="mt-4 mb-4 py-4">
                 {
                     myJobs.map(job => <MyJobCard key={job._id} job={job}/> )
                 }
