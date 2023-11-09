@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../../images/logo.png'
 import useAuth from "../../Hooks/useAuth";
+import { motion } from "framer-motion"
 
 
 const Navbar = () => {
@@ -26,7 +27,20 @@ const Navbar = () => {
     </div>
     <Link to="/">
    <div className="flex items-center cursor-pointer">
+
+    <motion.div 
+    initial={{ scale: 1 }}
+    animate={{ rotate: 360, scale: 1,  }}
+    transition={{
+      type: "spring",
+      stiffness: 260,
+      damping: 20,
+      repeat: Infinity 
+    }}
+    >
    <img src={logo} className="w-16"  alt="" />
+   </motion.div>
+
     <p className="normal-case text-2xl font-semibold">Job Buzz</p>
    </div>
    </Link>

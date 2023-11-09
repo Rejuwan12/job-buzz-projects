@@ -16,9 +16,7 @@ const MyJobCard = ({ job }) => {
     Application_Deadline,
     Salary_range,
     img_url,
-    
   } = job;
-
 
   const handleDelete = (_id) => {
     fetch(`http://localhost:5000/api/v1/cetegorys/${_id}`, {
@@ -33,11 +31,9 @@ const MyJobCard = ({ job }) => {
             text: "Deleted successfully",
             icon: "question",
             confirmButtonText: "Done",
-          })
-          .then(()=> {
-            location.reload()
-           })
-          
+          }).then(() => {
+            location.reload();
+          });
         }
       });
   };
@@ -61,8 +57,8 @@ const MyJobCard = ({ job }) => {
               <p>
                 Posted By: <span className="font-bold">{posted_the_job}</span>
               </p>
-             
-              <p className="bg-lime-500 text-lg font-semibold w-12 rounded-xl text-center">
+
+              <p className="bg-[#88bc49a4] text-lg font-semibold w-12 rounded-xl text-center">
                 {cetegory}
               </p>
             </div>
@@ -86,12 +82,19 @@ const MyJobCard = ({ job }) => {
             <a href={cv_Link} className="link font-bold">
               Your Resume Link
             </a>
-            
+
             <div className="card-actions justify-end">
-              <button onClick={() => {handleDelete(_id)}} className="btn bg-red-600 text-white font-bold">
+              <button
+                onClick={() => {
+                  handleDelete(_id);
+                }}
+                className="btn bg-red-600 text-white font-bold"
+              >
                 Delete
               </button>
-              <Link to={`/update/${_id}`}><button className="btn bg-green-500 text-white">Update</button></Link>
+              <Link to={`/update/${_id}`}>
+                <button className="btn bg-green-500 text-white">Update</button>
+              </Link>
             </div>
           </div>
         </div>

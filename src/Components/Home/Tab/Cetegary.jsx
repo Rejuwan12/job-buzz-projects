@@ -22,9 +22,9 @@ const Cetegary = () => {
 
   } 
   // console.log(totalData, tabData);
-  const filterData = totalData?.filter(data => data.Job_Title == tabData);
+  const filterData = totalData?.filter(data => data.cetegory == tabData);
   console.log(filterData);
-
+console.log(totalData);
   
   
 
