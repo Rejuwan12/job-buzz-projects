@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 import { usePDF } from 'react-to-pdf';
-import logo from '../../../images/google.png'
+
 import AppliedJobCard from "./AppliedJobCard";
 
 const AppliedJob = () => {

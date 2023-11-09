@@ -17,7 +17,7 @@ const Blogs = () => {
         <img className=" w-full h-[550px] object-cover mt-8" src={pic2} alt="" />
         <BlogTwo/>
         <img className=" w-full h-[550px] object-cover mt-8" src={pic3} alt="" />
-        <Blog3/>
+        <Blog3 />
     </div>
   );
 };

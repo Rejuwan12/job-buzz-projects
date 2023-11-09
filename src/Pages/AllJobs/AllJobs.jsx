@@ -9,7 +9,7 @@ const AllJobs = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/v1/cetegorys")
+      .get("https://jobs-server-project.vercel.app/api/v1/cetegorys")
       .then((res) => setTotalData(res.data));
   }, []);
   console.log(totalData);

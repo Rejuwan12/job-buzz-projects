@@ -58,7 +58,7 @@ const Update = () => {
     
     
     
-        fetch(`http://localhost:5000/api/v1/cetegorys/${_id}`,{
+        fetch(`https://jobs-server-project.vercel.app/api/v1/cetegorys/${_id}`,{
       method: 'PUT',
       headers:{
         'content-type': 'application/json'

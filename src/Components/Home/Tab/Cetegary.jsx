@@ -12,7 +12,7 @@ const Cetegary = () => {
 
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/api/v1/cetegorys')
+    axios.get('https://jobs-server-project.vercel.app/api/v1/cetegorys')
     .then(res => setTotalData(res.data))
   },[])
 

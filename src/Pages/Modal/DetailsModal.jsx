@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import toast from "react-hot-toast";
 import useAuth from "../../Hooks/useAuth";
 
@@ -39,7 +40,7 @@ const DetailsModal = ({ showModal, setShowModal, data }) => {
 
     const toastId = toast.loading("added");
 
-    fetch("http://localhost:5000/api/v1/user/applied", {
+    fetch("https://jobs-server-project.vercel.app/api/v1/user/applied", {
       method: "POST",
       headers: {
         "content-type": "application/json",

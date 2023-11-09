@@ -3,9 +3,9 @@ const Blog3 = () => {
     <div>
       <div
         tabIndex={0}
-        className="collapse collapse-arrow border border-base-300 bg-base-200"
+        className="collapse collapse-arrow border border-base-300 bg-base-100"
       >
-        <div className="collapse-title text-xl font-medium">
+        <div className="collapse-title text-xl font-medium mb-8">
           Explain My Code
         </div>
         <div className="collapse-content">
@@ -18,7 +18,7 @@ const Blog3 = () => {
             variables. totalData is initialized as an empty array, and tabData
             is initialized with the default value On Site Job. Data Fetching:
             You use the useEffect hook to make an asynchronous request to
-            http://localhost:5000/api/v1/cetegorys when the component mounts.
+            https://jobs-server-project.vercel.app/api/v1/cetegorys when the component mounts.
             The fetched data is then set using setTotalData. Tab Handling: You
             set up a tab system using react-tabs. There are five tabs: On Site
             Job, Remote Job, Hybrid,Part Time, and All Job. Each tab has an
@@ -76,7 +76,7 @@ const Blog3 = () => {
             Helmet component is used to dynamically set the document title for
             better SEO. Styling and UI: The form and its elements have styling
             classes applied for layout and appearance. Fetch Request: A POST
-            request is made to http://localhost:5000/api/v1/cetegorys with the
+            request is made to https://jobs-server-project.vercel.app/api/v1/cetegorys with the
             newJob data. Upon successful addition, a success toast notification
             is displayed. In summary, this component is responsible for
             rendering a form that allows users to input job details, and it uses

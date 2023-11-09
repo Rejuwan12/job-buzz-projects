@@ -19,7 +19,7 @@ const MyJobCard = ({ job }) => {
   } = job;
 
   const handleDelete = (_id) => {
-    fetch(`http://localhost:5000/api/v1/cetegorys/${_id}`, {
+    fetch(`https://jobs-server-project.vercel.app/api/v1/cetegorys/${_id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

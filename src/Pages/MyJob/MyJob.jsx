@@ -11,7 +11,7 @@ const MyJob = () => {
 
   const [myJobs , setMyJobs]= useState([])
     useEffect(()=>{
-        axios.get(`http://localhost:5000/api/v1/cetegorys?email=${user.email}`)
+        axios.get(`https://jobs-server-project.vercel.app/api/v1/cetegorys?email=${user.email}`)
         .then(res => setMyJobs(res.data))
     },[user])
     console.log(myJobs);
